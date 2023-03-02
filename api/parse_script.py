@@ -1,5 +1,3 @@
-
-
 class ParseScript:
 
     def import_from_txt(self, file_name):

@@ -6,7 +6,6 @@ import sys
 import traceback
 import unidecode
 import jsbeautifier
-from config import env_config
 import os
 
 app = Flask(__name__)
@@ -36,9 +35,4 @@ def parse_script():
             }
         }
     }
-    # print(env)
-    # print(f" ---> env '{env}' ")
-    # env = os.getenv("FLASK_ENV")
-    # app.config.from_object(env_config[env])
-
     return jsonify(available_endpoints)
